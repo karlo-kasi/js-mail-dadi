@@ -22,17 +22,19 @@ let listaMail = [
     "ser@gmail.com"
 ]
 
-let newMail = prompt("Inserisci la tua email");
+let newMail = prompt("Inserisci la tua email", "gianni@gmail.com");
 
 let isNewMailEmpty = false;
 
-for ( let i = 0; i < listaMail.length; i++ ){
+for ( let i = 0; i <= listaMail.length; i++ ){
+   if (newMail == listaMail[i])
+   isNewMailEmpty = true
    
 
 }
 
-console.log (listaMail, newMail)
-
-console.log (isNewMailEmpty)
-
+if (isNewMailEmpty)
+    console.log ("Fai parte della lista")
+else 
+    console.log ("Non fai parte della lista")
 
